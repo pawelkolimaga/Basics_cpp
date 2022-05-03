@@ -112,7 +112,7 @@ int main()
     size_t user_choice;
     do
     {
-        std::system("cls");
+        std::system("cls"); // add comment
         initMenuBox();
         std::cin >> user_choice;
         menuDecision(user_choice);
