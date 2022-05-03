@@ -2,6 +2,9 @@
 #include <string>
 #define PI 3.14
 
+void draw_squere();
+void draw_triangle();
+
 void display_description(double result, double r)
 {
     std::system("cls");
@@ -19,7 +22,7 @@ void display_description(double result, double side_size1, double side_size2)
     else
     {
         std::system("cls");
-        std::cout << "\n\nFigure area is: " << result << "\n\n";
+        std::cout << "\n\nFigure area is: " << result;
     }
 }
 
@@ -84,6 +87,8 @@ void menuDecision(int user_choice)
         std::cout << "Provide the squere side size: ";
         std::cin >> squere_side_size;
         get_squere_area(squere_side_size);
+        draw_squere();
+        std::cout << "\n\n";
         break;
     }
     case 4:
@@ -93,6 +98,8 @@ void menuDecision(int user_choice)
         std::cout << "\nProvide the triangular height: ";
         std::cin >> triangule_height;
         get_triangular_area(bottom_size, triangule_height);
+        std::cout << "\n\n";
+        draw_triangle();
         break;
     }
     case 0:
@@ -106,10 +113,50 @@ void menuDecision(int user_choice)
     }
 }
 
+void draw_squere()
+{
+    char dot = '*';
+
+    for (int i = 0; i < 5; i++)
+    {
+        std::cout << "\t";
+        for (int j = 0; j < 10; j++)
+        {
+            std::cout << dot;
+        }
+        std::cout << "\n";
+    }
+}
+
+void draw_triangle()
+{
+    char dot = '*';
+    auto counter = 10;
+    auto j = 0;
+    auto sec_counter = 1;
+
+    for (int i = 10; i > 5; i--)
+    {
+        while (j != counter)
+        {
+            std::cout << " ";
+            j++;
+        }
+        for (int i = 0; i != sec_counter; i++)
+        {
+            std::cout << dot;
+        }
+        std::cout << "\n";
+        sec_counter += 2;
+        j = 0;
+        counter--;
+    }
+}
+
 int main()
 {
     char yes_or_no;
-    size_t user_choice;
+    short user_choice;
     do
     {
         std::system("cls"); // add comment
