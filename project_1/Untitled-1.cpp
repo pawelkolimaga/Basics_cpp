@@ -89,7 +89,7 @@ void menuDecision(int user_choice)
     case 4:
     {
         std::cout << "\nProvide the bottom triangular size: ";
-        std::cin >> bottom_size;
+        std::cin >> bottom_size; // comment
         std::cout << "\nProvide the triangular height: ";
         std::cin >> triangule_height;
         get_triangular_area(bottom_size, triangule_height);
