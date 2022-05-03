@@ -3,9 +3,6 @@
         {
             "path": "."
         },
-        {
-            "path": "..\\project_2"
-        }
     ],
     "settings": {
         "files.associations": {
