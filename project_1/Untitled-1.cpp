@@ -11,7 +11,7 @@ void display_description(double result, double r)
     std::cout << "\n\nCircle field with r of circle: " << r << ", is " << result << "\n\n";
 }
 
-void display_description(double result, double side_size1, double side_size2)
+void display_description(double result, double side_size1, double side_size2) // to correct
 {
 
     if (side_size1 == side_size2)
