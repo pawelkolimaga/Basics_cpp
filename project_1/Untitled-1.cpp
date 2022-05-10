@@ -5,8 +5,7 @@
 
 int main()
 {
-    char yes_or_no;
-    short user_choice;
+
     do
     {
         std::system("cls"); // add comment
