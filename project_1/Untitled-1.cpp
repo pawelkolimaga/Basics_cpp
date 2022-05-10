@@ -1,12 +1,9 @@
-#include <iostream>
-#include <string>
-#define PI 3.14
 #include "library.h"
 
-int main()
+int main(int argc, char *charv[])
 {
 
-    do
+        do
     {
         std::system("cls"); // add comment
         initMenuBox();
