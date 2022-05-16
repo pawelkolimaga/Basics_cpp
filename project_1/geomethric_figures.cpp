@@ -3,7 +3,7 @@
 int main(int argc, char *charv[])
 {
 
-        do
+    do
     {
         std::system("cls"); // add comment
         initMenuBox();
